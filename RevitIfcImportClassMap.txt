@@ -41,8 +41,8 @@ IfcWindow		Windows
 IfcCivilElement		Generic Models
 #   IfcDistributionElement		
 #       IfcDistributionControlElement		
-IfcController		Specialty Equipment
-IfcSensor		Specialty Equipment
+IfcController		Speciality Equipment
+IfcSensor		Speciality Equipment
 #       IfcDistributionFlowElement		
 IfcDistributionFlowElement		Mechanical Equipment
 #         IfcEnergyConversionDevice		
@@ -59,7 +59,7 @@ IfcCableCarrierFitting		Cable Tray Fittings
 IfcDuctFitting		Duct Fittings
 IfcPipeFitting		Pipe Fittings
 #         IfcFlowMovingDevice		
-IfcFlowMovingDevice		Specialty Equipment
+IfcFlowMovingDevice		Speciality Equipment
 IfcFan		Mechanical Equipment
 IfcPump		Mechanical Equipment
 IfcFlowStorageDevice		
@@ -68,13 +68,13 @@ IfcCableCarrierSegment		Ducts
 IfcDuctSegment		Pipes
 IfcPipeSegment		
 #         IfcFlowStorageDevice		
-IfcTank		Specialty Equipment
+IfcTank		Speciality Equipment
 #         IfcFlowTerminal		
 IfcFlowTerminal		Generic Models
 IfcAirTerminal		Air Terminals
 IfcElectricAppliance	DISHWASHER	Plumbing Fixtures
 IfcElectricAppliance	ELECTRICCOOKER	Electrical Fixtures
-IfcElectricAppliance	FRIDGE_FREEZER	Specialty Equipment
+IfcElectricAppliance	FRIDGE_FREEZER	Speciality Equipment
 IfcElectricAppliance	TUMBLEDRYER	Electrical Fixtures
 IfcElectricAppliance	USERDEFINED	Electrical Fixtures
 IfcElectricAppliance	WASHINGMACHINE	Electrical Fixtures
@@ -86,9 +86,9 @@ IfcSpaceHeater		Mechanical Equipment
 #          IfcFlowTreatmentDevice		
 #   IfcElementAssembly		
 IfcBuildingElementPart		Parts
-IfcDiscreteAccessory		Specialty Equipment
+IfcDiscreteAccessory		Speciality Equipment
 IfcFastener		Structural Connections
-IfcMechanicalFastener		Specialty Equipment
+IfcMechanicalFastener		Speciality Equipment
 #      IfcReinforcingElement		
 IfcReinforcingBar		Structural Rebar
 IfcReinforcingMesh		Structural Fabric Areas
@@ -99,5 +99,5 @@ IfcSystemFurnitureElement		Furniture
 #   IfcGeographicElement		
 IfcGeographicElement		Site
 #   IfcTransportElement		
-IfcTransportElement		Specialty Equipment
+IfcTransportElement		Speciality Equipment
 IfcSpace		Generic Models
