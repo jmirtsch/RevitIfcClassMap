@@ -1,103 +1,164 @@
 # IFC Class Name and Type to Revit Category/Sub-Category Table		
 # Maps IFC Class and Type to Revit Category/Sub-Category		
-# You may edit using File -> Import/Export Settings -> IFC Options... .		
+# Revised by Jon Mirtschin (Geometry Gym Pty Ltd) December 2016
+# Classes can be excluded from import as per following line
+# IfcBuildingElementProxy		Don't Import
 # -----------------------------------------------------		
 #IfcElement		
 #   IfcBuildingElement		
 IfcBeam		Structural Framing
+IfcBuildingElementPart		Parts
+IfcBuildingElementProxy	Entourage	Entourage
+IfcBuildingElementProxy	MechanicalEquipment	MechanicalEquipment
+IfcBuildingElementProxy	Parking	Parking
+IfcBuildingElementProxy	PlumbingFixture	PlumbingFixtures
+IfcBuildingElementProxy	SpecialityEquipment	SpecialtyEquipment
+IfcBuildingElementProxy	TinDesign	Site
 IfcBuildingElementProxy		Generic Models
-IfcColumn		Columns
+IfcColumn		Structural Columns
 IfcColumn	[LoadBearing]	Structural Columns
-IfcColumn	COLUMN	Columns
-IfcColumn	NOTDEFINED	Columns
-IfcColumn	USERDEFINED	Columns
 IfcCovering		Generic Models
 IfcCovering	CEILING	Ceilings
 IfcCovering	FLOORING	Floors
 IfcCovering	ROOFING	Roofs
-IfcCurtainWall		Curtain Systems
+IfcCurtainWall		CurtainWallPanels
 IfcDoor		Doors
 IfcFooting		Structural Foundations
 IfcMember		Structural Framing
 IfcMember	MULLION	Curtain Wall Mullions
+IfcMember	POST	StructuralColumns
+IfcMember	STUD	StructuralColumns
+IfcMember	MULLION	Curtain Wall Mullions
 IfcPile		Structural Foundations
-IfcPlate		Structural Framing
+IfcPlate		StructConnections
 IfcPlate	CURTAIN_PANEL	Curtain Panels
+IfcRailing	HANDRAIL	RailingHandRail
+IfcRailing	Baluster	RailingBalusterRail
 IfcRailing		Railings
 IfcRamp		Ramps
 IfcRampFlight		Ramps
 IfcRoof		Roofs
-IfcSlab		Generic Models
+IfcSlab		Floors
 IfcSlab	BASESLAB	Structural Foundations
 IfcSlab	FLOOR	Floors
-IfcSlab	LANDING	Stairs
+IfcSlab	LANDING	StairsLandings
 IfcSlab	ROOF	Roofs
 IfcStair		Stairs
 IfcStairFlight		Stairs
 IfcWall		Walls
-IfcWallStandardCase		Walls
 IfcWindow		Windows
-#    IfcCivilElement		
+#   IfcCivilElement		
 IfcCivilElement		Generic Models
 #   IfcDistributionElement		
 #       IfcDistributionControlElement		
-IfcController		Speciality Equipment
-IfcSensor		Speciality Equipment
+IfcActuator		Specialty Equipment
+IfcAlarm		Specialty Equipment
+IfcController		Specialty Equipment
+IfcFlowInstrument		Specialty Equipment
+IfcProtectiveDeviceTrippingUnit		Specialty Equipment
+IfcSensor		Specialty Equipment
+IfcUnitaryControlElement		Specialty Equipment
 #       IfcDistributionFlowElement		
 IfcDistributionFlowElement		Mechanical Equipment
+IfcDistributionChamberElement		Mechanical Equipment
 #         IfcEnergyConversionDevice		
-IfcEnergyConversionDevice		Generic Models
+IfcAirToAirHeatRecovery		Mechanical Equipment
 IfcBoiler		Mechanical Equipment
+IfcBurner		Mechanical Equipment
+IfcChilller		Mechanical Equipment
+IfcCoil		Mechanical Equipment
+IfcCondenser		Mechanical Equipment
+IfcCooledBeam		Mechanical Equipment
+IfcCoolingTower		Mechanical Equipment
+IfcElectricGenerator		Mechanical Equipment
+IfcElectricMotor		Mechanical Equipment
+IfcEngine		Mechanical Equipment
+IfcEvaporativeCooler		Mechanical Equipment
+IfcEvaporator		Mechanical Equipment
+IfcHeatExchanger		Mechanical Equipment
+IfcHumidifier		Mechanical Equipment
+IfcMotorConnection		Mechanical Equipment
+IfcSolarDevice		Mechanical Equipment
+IfcTransformer		Mechanical Equipment
+IfcTubeBundle		Mechanical Equipment
+IfcUnitaryEquipment		Mechanical Equipment
 #         IfcFlowController		
-IfcFlowController		Mechanical Equipment
+IfcAirTerminalBox		Mechanical Equipment
+IfcDamper		Mechanical Equipment
+IfcElectricDistributionBoard		Mechanical Equipment
+IfcElectricTimeControl		Mechanical Equipment
+IfcFlowMeter		Mechanical Equipment
+IfcProtectiveDevice		Mechanical Equipment
 IfcSwitchingDevice		Electrical Fixtures
 IfcValve		Pipe Accessories
 IfcValve	DRAWOFFCOCK	Plumbing Fixtures
 IfcValve	FAUCET	Plumbing Fixtures
 #         IfcFlowFitting		
 IfcCableCarrierFitting		Cable Tray Fittings
-IfcDuctFitting		Duct Fittings
+IfcCableFitting		ConduitFitting
+IfcDuctFitting		DuctFitting
+IfcJunctionBox		ConduitFitting
 IfcPipeFitting		Pipe Fittings
 #         IfcFlowMovingDevice		
-IfcFlowMovingDevice		Speciality Equipment
+IfcFlowMovingDevice		Specialty Equipment
+IfcCompressor		Specialty Equipment
 IfcFan		Mechanical Equipment
 IfcPump		Mechanical Equipment
-IfcFlowStorageDevice		
-#         IfcFlowSegment		Cable Trays
-IfcCableCarrierSegment		Ducts
-IfcDuctSegment		Pipes
-IfcPipeSegment		
+#         IfcFlowSegment		
+IfcCableCarrierSegment	CONDUITSEGMENT	Conduit
+IfcCableCarrierSegment		CableTray
+IfcCableSegment		Conduit
+IfcDuctSegment		DuctFitting
+IfcPipeSegment	FLEXIBLESEGMENT	PipeSegments
+IfcPipeSegment		PipeSegments
 #         IfcFlowStorageDevice		
-IfcTank		Speciality Equipment
+IfcElectricFlowStorageDevice		Specialty Equipment
+IfcTank		Specialty Equipment
 #         IfcFlowTerminal		
-IfcFlowTerminal		Generic Models
-IfcAirTerminal		Air Terminals
+IfcAirTerminal		DuctTerminal
+IfcAudioVisualAppliance		SpecialtyEquipment
+IfcCommunicationsAppliance		SpecialtyEquipment
 IfcElectricAppliance	DISHWASHER	Plumbing Fixtures
 IfcElectricAppliance	ELECTRICCOOKER	Electrical Fixtures
-IfcElectricAppliance	FRIDGE_FREEZER	Speciality Equipment
+IfcElectricAppliance	FRIDGE_FREEZER	Specialty Equipment
 IfcElectricAppliance	TUMBLEDRYER	Electrical Fixtures
-IfcElectricAppliance	USERDEFINED	Electrical Fixtures
+IfcElectricAppliance	FIXTURE	Electrical Fixtures
+IfcElectricAppliance		ElectricalEquipment
 IfcElectricAppliance	WASHINGMACHINE	Electrical Fixtures
+IfcFireSuppressionTerminal		SpecialtyEquipment
 IfcFireSuppressionTerminal	SPRINKLER	Sprinklers
 IfcLamp		Lighting Devices
 IfcLightFixture		Lighting Fixtures
+IfcMedicalDevice		Specialty Equipment
+IfcOutlet		Specialty Equipment
 IfcSanitaryTerminal		Plumbing Fixtures
-IfcSpaceHeater		Mechanical Equipment
+IfcSpaceHeater		MechanicalEquipment
+IfcStackTerminal		MechanicalEquipment
+IfcWasteTerminal		MechanicalEquipment
 #          IfcFlowTreatmentDevice		
+IfcDuctSilencer		MechanicalEquipment
+IfcFilter		MechanicalEquipment
+IfcInterceptor		MechanicalEquipment
 #   IfcElementAssembly		
-IfcBuildingElementPart		Parts
-IfcDiscreteAccessory		Speciality Equipment
+#   IfcElementComponent		
+IfcDiscreteAccessory		StructConnections
 IfcFastener		Structural Connections
-IfcMechanicalFastener		Speciality Equipment
+IfcMechanicalFastener		Specialty Equipment
+IfcVibrationIsolator		
 #      IfcReinforcingElement		
 IfcReinforcingBar		Structural Rebar
 IfcReinforcingMesh		Structural Fabric Areas
+IfcTendon		Structural Connections
+IfcTendonAnchor		Structural Connections
 #   IfcFurnishingElement		
 IfcFurnishingElement		Furniture
+IfcFurniture	CASEWORK	Casework
 IfcFurniture		Furniture
-IfcSystemFurnitureElement		Furniture
+IfcSystemFurnitureElement		FurnitureSystems
 #   IfcGeographicElement		
-IfcGeographicElement		Site
+IfcGeographicElement	TinDesign	Site
+IfcGeographicElement	TERRAIN	Site
+IfcGeographicElement	Planting	Planting
+IfcGeographicElement		Generic Models
 #   IfcTransportElement		
-IfcTransportElement		Speciality Equipment
-IfcSpace		Generic Models
+IfcTransportElement		Specialty Equipment
