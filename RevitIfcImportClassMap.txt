@@ -1,6 +1,6 @@
 # IFC Class Name and Type to Revit Category/Sub-Category Table		
 # Maps IFC Class and Type to Revit Category/Sub-Category		
-# Revised by Jon Mirtschin (Geometry Gym Pty Ltd) December 2016
+# Revised by Jon Mirtschin (Geometry Gym Pty Ltd)
 # Classes can be excluded from import as per following line
 # IfcBuildingElementProxy		Don't Import
 # -----------------------------------------------------		
